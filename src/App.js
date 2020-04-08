@@ -31,11 +31,16 @@ export default function App() {
             dataIndex: 'address',
             key: 'address',
         },
+        {
+            title: 'Phone',
+            dataIndex: 'phone',
+            key: 'phone',
+        },
     ];
 
     return (
         <div className="App">
-            <Table dataSource={employees} columns={columns}/>;
+            <Table dataSource={employees} columns={columns}/>
         </div>
     );
 }
